@@ -21,9 +21,17 @@ app.get("/lgin.html", (req, res) => {
 app.get("/New.html", (req, res) => {
     res.render("signup");
 });
-app.get("FB.html", (req, res) => {
-    res.render("FB");
-    // res.redirect('makemytrip.com/flights');
+app.get("/FB.html", (req, res) => {
+    res.redirect('https://makemytrip.com/flights/');
+});
+app.get("/BB.html", (req, res) => {
+    res.redirect('https://makemytrip.com/railways/');
+});
+app.get("/TB.html", (req, res) => {
+    res.redirect('https://makemytrip.com/bus-tickets/');
+});
+app.get("/HB.html", (req, res) => {
+    res.redirect('https://makemytrip.com/hotels/');
 });
 app.get("/Trip.html", (req, res) => {
     res.render("Seemore");
